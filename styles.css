@@ -22,17 +22,18 @@ body{
     display:flex;
     align-items: center;
     flex-direction: column;
-    width: 380px;
-    height: 600px;
-    margin-top: calc((100vh - 600px)/2);
-    margin-bottom: calc((100vh - 600px)/3);
-    border-radius: 25px;
+    width: 280px;
+    height: 440px;
+    margin-top: calc((100vh - 440px)/2);
+    margin-bottom: calc((100vh - 440px)/3);
+    border-radius: 20px;
     background-color:hsl(0, 0%, 100%);
+    padding-bottom: 30px;
 }
 .img-div{
     height: 65%;
     width: 100%;
-    padding: 20px;
+    padding: 13px 13px 0 13px;
 }
 img{
     border-radius: 10px;
@@ -40,29 +41,27 @@ img{
     height:100%
 }
 .container h5{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: Tahoma;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    padding:0 30px;
+    padding:5px 20px 0 20px;
     text-align: center;
     margin: 20px auto 0 auto;
-
 }
 .container p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Tahoma;
     font-weight: 400;
     color: hsla(218, 44%, 22%,0.7);
     font-weight: 500;
-    padding:0 40px;
+    padding:0 25px;
     text-align: center;
 
 }
 .attribution { 
-    font-size: 11px; 
     text-align: center; 
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -70,11 +69,25 @@ img{
 }
 @media only screen and (max-width:500px){
     .main{
-        padding:0 5px;
+        padding:0 10px;
     }
     .container{
         width:90%;
         height:80%;
+        position: fixed;
+        top:33%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding-bottom: 0;
+    }
+    .img-div{
+        height:60%;
+    }
+    .container h5{
+        font-size: 1.5rem;
+    }
+    .container p{
+        font-size: 1.2rem;
     }
     .attribution{
         display: none;
